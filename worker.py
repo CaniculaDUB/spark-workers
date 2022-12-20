@@ -123,7 +123,7 @@ def addWorker(token, num):
   "zone": "projects/try2-371019/zones/europe-west1-b"
 }#json.dumps(tdata)
     url='https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances'
-    headers={"Authorization": "Bearer "+token}
+    headers={"Authorization": "Bearer "+ "ya29.a0AX9GBdWk2rBWMWyg0hEtmw2TYfFaW2TEiEbGUM-biaH_pNk6h_GlivienRbkm75KUraixg4xU3wDk9xPDwy8Yl9s0s5GwdXIsEVjMCORCvaEaBHPupZpQzg0C9d9HdXn_gLD6_LQZmbm4gh_3ngI5Xl43IYkxNnxBTtFkBsXqAmpyHfBH_Lyfl5WaSCkn9E4o3wQNUGnmsvyn8VAH3cvei5OE3VOWFuPOP716sIaCgYKAZoSARASFQHUCsbCUt5rnBLaiIzZdbh7bNOdAQ0238"} #token}
     resp=requests.post(url,headers=headers, data=data)
     #if resp.status_code==200:     
     return "Done"
