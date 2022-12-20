@@ -34,8 +34,8 @@ def add():
 
 
 def addWorker(token, num):
-    #with open('payload.json') as p:
-    #  tdata=json.load(p)
+    with open('payload.json') as p:
+      tdata=json.load(p)
     #tdata['name']='slave'+str(num)
     #data=json.dumps(tdata)
     #url='https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances'
