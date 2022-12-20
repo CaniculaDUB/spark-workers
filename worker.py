@@ -39,7 +39,6 @@ def addWorker(token, num):
     tdata['name']='slave'+str(num)
     data=json.dumps(tdata)
     #headers={"Authorization": "Bearer "+ token}
-    #resp=requests.post(url,headers=headers, data=data)
     url = "https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances"
 
     headers = {
@@ -49,6 +48,7 @@ def addWorker(token, num):
 
     response = requests.request("POST", url, headers=headers, data=data)
 
+    return "Algo"
     if response.status_code==200:     
         return "Done"
     else:
