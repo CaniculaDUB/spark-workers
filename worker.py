@@ -48,7 +48,7 @@ def addWorker(token, num):
         'Content-Type': 'text/plain'
     }
 
-    response = requests.request("POST", url, headers=headers, data=payload)
+    response = requests.request("POST", url, headers=headers, data=data)
 
     #if resp.status_code==200:     
     return "Done"
