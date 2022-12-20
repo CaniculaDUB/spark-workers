@@ -10,9 +10,9 @@ def get_api_key() -> str:
     #if secret:
     #    return secret
     #else:
-        #local testing
+    #local testing
     with open('.key') as f:
-    return f.read()
+      return f.read()
       
 @app.route("/")
 def hello():
