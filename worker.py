@@ -42,7 +42,7 @@ def addWorker(token, num):
     url = "https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances"
 
     headers = {
-        'Authorization': 'Bearer ya29.a0AX9GBdUhaKQrLlSGeKbg_7oKeQe25_Qd2n2J8HEkWtY3JHUoWFrnWbhI9mnMCGvsmOv8fD7Uqp3aNSQfDALRacwIOrnC19bgv_Q9f4Yq8x3k1-16npeVscrtFwHmPcCJ5dRydAasFjLSjul738DxIjoaRM-9YwupSpFu86NyVd-GbR3aGgXz4ob4cECDzN9hLR6ClSf3Ulb3uVAHYBzhPAOr_gCxAPfyh6NytgYaCgYKASwSARASFQHUCsbCSHX_t3QAmMJsMIjlHvTV6A0238',
+        'Authorization': 'Bearer ya29.a0AX9GBdX8THSRMdcrUPcaZ9aieG_UpT7FGEfqA_WQZF-T-8xZgc2ABOgV4jnUNz4AbB0Yxj8X-bgxrgkDBjvwNo5aRDW1237OmBIBBK0A0cxasn76vO6jl5BnFCUs-oxPdwFVkLjLASl0zeeMmkISysh1pAEphkPmUkrcZGQ35hQTGF4zD4mUN4DxJcD9AVNNESNeAhtZjKzTY1yN8W4w3s-FWgcw8TyTo4ZnUCsaCgYKATYSARASFQHUCsbCQZ2uLdn3NUxbKRc-R1uijg0238',
         'Content-Type': 'text/plain'
     }
 
