@@ -34,19 +34,19 @@ def add():
 
 
 def addWorker(token, num):
-    with open('payload.json') as p:
-      tdata=json.load(p)
-    tdata['name']='slave'+str(num)
-    data=json.dumps(tdata)
-    url='https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances'
-    headers={"Authorization": "Bearer "+token}
-    resp=requests.post(url,headers=headers, data=data)
-    if resp.status_code==200:     
-      return "Done"
-    else:
-      print(resp.content)
-      return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
-      return "ERROR"
+    #with open('payload.json') as p:
+    #  tdata=json.load(p)
+    #tdata['name']='slave'+str(num)
+    #data=json.dumps(tdata)
+    #url='https://www.googleapis.com/compute/v1/projects/try2-371019/zones/europe-west1-b/instances'
+    #headers={"Authorization": "Bearer "+token}
+    #resp=requests.post(url,headers=headers, data=data)
+    #if resp.status_code==200:     
+    return "Done"
+    #else:
+    #  print(resp.content)
+    #  return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
+    #  return "ERROR"
 
 
 
