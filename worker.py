@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_api_key() -> str:
     secret = os.environ.get("COMPUTE_API_KEY")
     if secret:
-        return secret
+        return secret.replace(\n,"")
     else:
         #local testing
         with open('.key') as f:
