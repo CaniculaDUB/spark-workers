@@ -7,12 +7,12 @@ app = Flask(__name__)
 
 def get_api_key() -> str:
     secret = os.environ.get("COMPUTE_API_KEY")
-    #if secret:
-    #    return secret
-    #else:
-    #local testing
-    with open('.key') as f:
-      return f.read()
+    if secret:
+        return secret
+    else:
+        #local testing
+        with open('.key') as f:
+          return f.read()
       
 @app.route("/")
 def hello():
