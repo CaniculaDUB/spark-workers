@@ -48,7 +48,7 @@ def addWorker(token, num):
 
     response = requests.request("POST", url, headers=headers, data=data)
 
-    return "Algo"
+   
     if response.status_code==200:     
         return "Done"
     else:
