@@ -30,7 +30,7 @@ def add():
   else:
     token=get_api_key()
     ret = addWorker(token,request.form['num'])
-    return token
+    return ret
 
 
 def addWorker(token, num):
