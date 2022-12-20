@@ -8,7 +8,7 @@ app = Flask(__name__)
 def get_api_key() -> str:
     secret = os.environ.get("COMPUTE_API_KEY")
     if secret:
-        return secret.sub(r"(\n)","")
+        return secret
     else:
         #local testing
         with open('.key') as f:
@@ -49,12 +49,12 @@ def addWorker(token, num):
 
     response = requests.request("POST", url, headers=headers, data=data)
 
-    #if resp.status_code==200:     
-    return "Done"
-    #else:
-    #  print(resp.content)
-    #  return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
-    #  return "ERROR"
+    if resp.status_code==200:     
+        return "Done"
+    else:
+       print(resp.content)
+       return "Error\n"+resp.content.decode('utf-8') + '\n\n\n'+data
+       return "ERROR"
 
 
 
