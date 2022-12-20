@@ -9,7 +9,7 @@
     {
       "autoDelete": true,
       "boot": true,
-      "deviceName": "slave2",
+      "deviceName": "slave1",
       "initializeParams": {
         "diskSizeGb": "10",
         "diskType": "projects/try2-371019/zones/us-west4-b/diskTypes/pd-balanced",
@@ -35,7 +35,7 @@
       }
     ]
   },
-  "name": "slave2",
+  "name": "slave1",
   "networkInterfaces": [
     {
       "accessConfigs": [
