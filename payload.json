@@ -76,9 +76,7 @@
     "enableVtpm": true
   },
   "tags": {
-    "items": [
-      "http-server",
-      "https-server"]
+    "items": []
   },
   "zone": "projects/try2-371019/zones/europe-west1-b"
 }
